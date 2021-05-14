@@ -1,0 +1,31 @@
+# include <iostream>
+Using namespace std;
+Void prime (int x);
+Int main()
+{
+Int number = 0;
+Count << “ Enter a number : “ <<;
+Cin >> number;
+Prime ( number);
+}
+Void prime (int x)
+{
+For ( int i=x ; i>0 ; i--)
+Bool not_prime = false;
+For ( int j=2; j<I ; j++)
+{
+If ( i%j = =0)
+{
+Not_prime = true;
+J=I;
+}
+}
+If ( not_prime == false)
+{
+Count << “ prime :”<<i<< “ “;
+Sum = sum+I;
+}
+}
+Cout<< “ The sum is :” << sum;
+}
+
