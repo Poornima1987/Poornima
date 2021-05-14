@@ -1,0 +1,31 @@
+# include < bits/stdc++,h>
+Using namespace std;
+Long long int N=1000001;
+Long long int sieve[1000001];
+Void sieve()
+{
+Int I;
+For ( int i=2; i<=N;i++)
+{
+If prime[i]==0)
+{
+For( int j=i*2;j<=N;j+=i)
+{
+Prime[j]=1;
+}
+}
+}
+}
+Int main()
+{
+Sieve();
+Int i;
+For (i=2;i<=20;i++)
+{
+Cout<<i<< “ “<<prime[i];
+}
+Return 0;
+}
+
+
+
