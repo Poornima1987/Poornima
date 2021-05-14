@@ -1,0 +1,20 @@
+Class solution {
+Public int count primes (int n) {
+If ( n<= 2)
+Return 0 ;
+Boolean [] composites = new Boolean [n] ;
+Int limit = (int ) Math.sqrt(n);
+For(int i = 2 ; i <= limit ; i++ ) {
+If(composites [i] = = false) {
+For(int j = i*I ; j <n ; j++ ) {
+Composites [j] = true;
+}
+}
+}
+Int count = 0;
+For( int I = 2; i<n ; i++) {
+If ( composites [i] -0== false) count ++;
+}
+Return count ; 
+}
+
