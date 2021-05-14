@@ -1,0 +1,17 @@
+Public class prime number{
+Public static void generate prime(int num){
+Boolean prime[] = new Boolean[num + 1];
+For(int I = 2;I < num; i++ {
+Prime[i] = true;
+For(int p = 2; p < num/2 ; p++) {
+If ( prime[p] ) {
+For (int j = p; j*p <= num; j++) 
+Prime [ j*p] = false ;
+}
+}
+For(int i = 2; i <= num; i++) {
+If(prime [i] ) {
+System.out.println(i+ “”);
+}
+}
+}
