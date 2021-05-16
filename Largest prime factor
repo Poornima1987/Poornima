@@ -1,0 +1,25 @@
+//Max prime factor
+#include <iostream>
+Using name space std;
+Long long get maxprimefactor(long long n);
+{
+Long long maxPF = -1;
+While (n%2==0) {
+maxPF=2;
+n/=2
+}
+For( int i=3;i<=sqrt(n); i+=2) {
+While (n%i = =0) {
+maxPF = i;
+n = n/i:
+}
+}
+If ( n > 2)
+maxPF = n;
+return maxPF;
+}
+Int main() {
+Long long n = 13195;
+Cout<< “Max prime factor of “ <<n<<”is”<< getMaxprimefactor);
+}
+
