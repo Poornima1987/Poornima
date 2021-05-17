@@ -1,0 +1,10 @@
+//Change all even bits in a number
+#include <bits/stdc++.h>
+using namespace std;
+int convertEvenBitToOne (int n) {return (n&0*aaaaaa);
+int main ()
+{
+int n=30;
+Cout<<convertEvenBitToOne (n);
+return 0;
+}
