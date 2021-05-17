@@ -1,0 +1,19 @@
+//longest consecutive 
+#include <bit/stdc++.h>
+using namespace std;
+int maxConsecutiveones (int x);
+{
+int count = 0;
+while (x! = )
+{
+x = (x& (x<<1));
+count ++;
+}
+return count;
+}
+int main ()
+{
+Cout <<maxConsecutiveOnes (14) << end;
+Cout<<maxConsecutiveOnes (222) <<end;
+return 0;
+}
