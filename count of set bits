@@ -1,0 +1,14 @@
+//count of set bits
+#include <iostream>
+using namespace std;
+int main()
+{
+int Table[] = {0,1,1,2,1,2,2,3,1,2,2,3,2,3,3,4};
+int n;
+cin>>n;
+int count = 0;
+for(int i = 0;i < n,n>>=4)
+count = count + Table[n];
+Cout<<count;
+return 0;
+}
