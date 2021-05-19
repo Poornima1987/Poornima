@@ -1,0 +1,17 @@
+//return all possible unique permutations
+Class solution{
+Public:
+Vector<vector<int>>permute(vector<int> &nums){
+if(nums.size()<=1)
+return(nums);
+Vector<vector<int>result;
+for(int i=0;i<nums.size();++i){
+Vector<int>v(nums.begin(),nums.end());
+auto res=permute(v);
+for(int j=0;j<res.size();++j){
+Vector<int>_v=res[j];
+result.push_back(_v);
+}
+}
+return result;
+};
