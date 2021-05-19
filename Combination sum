@@ -1,0 +1,19 @@
+//combination sum
+Class solution{
+Public List<List<Integer>> candidates,int combinationsum(int[]target){
+List<list<Integer>>result==new arraylist();	
+backtrack(candidates,0,target,new arraylist(),result);
+return result;
+}
+Private void backtrack(int[] cand,int start,int target,list<integer>list,list<list<integer>>result){
+if(target<0)
+return;
+if(target==0)
+result.add(new arraylist(list));
+for(int i=start;i<cand.length;i++){
+list.add(cand[i]);
+backtrack(cand,I,target cand[i],list,result);
+list.remove(list.size()-1);
+}
+}
+}
